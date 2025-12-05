@@ -20,3 +20,4 @@ Visit `http://localhost:3000` and work through the levels:
 Notes:
 - Components live in `/components` and are already wired to `useGSAP` with refs.
 - All GSAP logic is intentionally left as `// TODO` so you can practice filling it in.
+# GSAP-Playground
