@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-space-grotesk), 'Helvetica Neue', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-slate-800/70;
+  }
+}
+
+@layer components {
+  .box {
+    @apply flex h-[100px] w-[100px] items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-cyan-500 text-slate-900 shadow-glow ring-1 ring-slate-100/20;
+  }
+
+  .panel {
+    @apply rounded-2xl bg-panel p-6 shadow-xl shadow-slate-900/40 ring-1 ring-slate-800/70;
+  }
+
+  .label-pill {
+    @apply inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.15em] text-slate-300 ring-1 ring-white/10;
+  }
+}
